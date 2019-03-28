@@ -1,4 +1,4 @@
-spring:
+﻿spring:
   profiles:
     active: dev
 ---
@@ -15,6 +15,23 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     prefer-ip-address: true
+server:
+  port: 8002
+spring:
+  profiles: test
+  application:
+    name: PLAT-SERVICE
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true
+info:
+  app.name: trade
+  company.name: 嗨淘科技有限公司
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 
 ---
 
@@ -29,7 +46,6 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/
   instance:
-
     prefer-ip-address: true
 info:
   app.name: trade
