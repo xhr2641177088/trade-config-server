@@ -1,7 +1,8 @@
-﻿spring:
+spring:
   profiles:
     active: dev
 ---
+
 server:
   port: 8001
 spring:
@@ -14,12 +15,9 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     prefer-ip-address: true
-info:
-  app.name: trade
-  company.name: 嗨淘科技
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+
 ---
+
 server:
   port: 8002
 spring:
@@ -31,6 +29,7 @@ eureka:
     service-url:
       defaultZone: http://localhost:7001/eureka/
   instance:
+
     prefer-ip-address: true
 info:
   app.name: trade
