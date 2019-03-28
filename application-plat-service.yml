@@ -1,4 +1,4 @@
-spring:
+﻿spring:
   profiles:
     active: dev
 ---
@@ -34,6 +34,6 @@ eureka:
     prefer-ip-address: true
 info:
   app.name: trade
-  company.name: 嗨淘科技
+  company.name: 嗨淘科技有限公司
   build.artifactId: $project.artifactId$
   build.version: $project.version$
