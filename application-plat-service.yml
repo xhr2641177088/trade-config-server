@@ -14,6 +14,11 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     prefer-ip-address: true
+info:
+  app.name: trade
+  company.name: 嗨淘科技
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
 ---
 server:
   port: 8002
@@ -27,3 +32,8 @@ eureka:
       defaultZone: http://localhost:7001/eureka/
   instance:
     prefer-ip-address: true
+info:
+  app.name: trade
+  company.name: 嗨淘科技
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
